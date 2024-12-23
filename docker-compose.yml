@@ -3,6 +3,6 @@ services:
     image: tms/lesson57
     build:
       context: .
-    restart: on-failure
+    restart: always
     ports:
       - "8080:8080"

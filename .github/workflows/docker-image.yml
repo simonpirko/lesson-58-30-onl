@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build and Run the Docker image
-      run: docker build . --file Dockerfile --tag tms/lesson58:latest && docker run -d -p 8080:8080 tms/lesson58:latest
+      run: docker build . --file Dockerfile --tag tms/lesson58:latest && docker stop tms/lesson58:latest && docker run -d -p 8080:8080 tms/lesson58:latest

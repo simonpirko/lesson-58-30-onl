@@ -1,0 +1,9 @@
+services:
+  app:
+    image: tms/lesson57
+    build:
+      context: .
+    restart: on-failure
+    container_name: spring-boot-app
+    ports:
+      - "8080:8080"
